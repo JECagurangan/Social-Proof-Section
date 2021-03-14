@@ -1,6 +1,6 @@
-# Frontend Mentor - Article preview component solution
+# Frontend Mentor - Social proof section solution
 
-This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA).
 
 ## Table of contents
 
@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/scss-bem-architecture-vanilla-javascript-40cmRFWy2](https://www.frontendmentor.io/solutions/scss-bem-architecture-vanilla-javascript-40cmRFWy2)
-- Live Site URL: [je-article-preview-component.netlify.app](https://je-article-preview-component.netlify.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/scss-html-DzOrVAF8e](https://www.frontendmentor.io/solutions/scss-html-DzOrVAF8e)
+- Live Site URL: [https://je-social-proof-section.netlify.app/](https://je-social-proof-section.netlify.app/)
 
 ## My process
 
@@ -48,15 +48,10 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Vanilla Javascript
 - SCSS
 - BEM Architecture
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
@@ -68,11 +63,6 @@ transition: height 0.5s ease-in-out;
 const shareButtonSVG = shareButton.childNodes[1];
 const shareButtonPath = shareButtonSVG.childNodes[0];
 ```
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 

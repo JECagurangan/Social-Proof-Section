@@ -1,0 +1,52 @@
+.ratings{
+    margin-top: 3.125em;
+    margin-bottom: 3.125em;
+    display: grid;
+    gap: 1rem;
+
+
+
+
+    
+    &__card{
+        width: 326px;
+        height: 80px;
+        background-color: $light-gray-magenta;
+        border-radius: 0.5em;
+        padding: 1.125rem;
+
+        &__stars{
+            padding-bottom: 5px;
+        }
+    }
+
+    &__h3{
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    @media (min-width: 1440px){
+        display: flex;
+        flex-direction: column;
+
+        &__card{
+            width: 444px;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .reviews{
+            align-self: flex-start;
+
+        }
+
+        .report{
+            align-self: center;
+        }
+
+        .best{
+            align-self: flex-end;
+        }
+    }
+}

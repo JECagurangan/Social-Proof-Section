@@ -1,0 +1,29 @@
+header{
+
+    h1{ 
+        font-size: 2rem;
+        line-height: 2rem;
+        max-width: 572px;
+
+        @media (min-width: 1440px){
+            text-align: left;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            max-width: 375px;
+        }
+    }
+
+    p{
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $dark-gray-magenta;
+        max-width: 572px;
+
+        @media (min-width: 1440px){
+            text-align: left;
+            max-width: 430px;
+        }
+    }
+
+
+}

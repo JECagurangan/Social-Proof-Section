@@ -10,7 +10,7 @@
         height: 300px;
 
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     &__card{
@@ -23,6 +23,8 @@
         @media (min-width: 1440px){
             width: 350px;
             height: 235px;
+
+            margin-right: 20px;
 
             &.colton{
                 align-self: flex-start;

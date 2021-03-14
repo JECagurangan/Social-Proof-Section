@@ -1,7 +1,7 @@
 header{
 
     h1{ 
-        font-size: 2rem;
+        font-size: 1.9 rem;
         line-height: 2rem;
         max-width: 572px;
 
@@ -16,12 +16,15 @@ header{
     p{
         font-size: 0.875rem;
         font-weight: 500;
-        color: $dark-gray-magenta;
+        color: $dark-gray-magenta; 
         max-width: 572px;
+        margin-top: 30px;
+        margin-bottom: 0px;
 
         @media (min-width: 1440px){
             text-align: left;
             max-width: 430px;
+            margin-bottom: 74px;
         }
     }
 

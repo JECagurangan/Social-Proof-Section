@@ -4,10 +4,6 @@
     display: grid;
     gap: 1rem;
 
-
-
-
-    
     &__card{
         width: 326px;
         height: 80px;
@@ -28,6 +24,7 @@
     @media (min-width: 1440px){
         display: flex;
         flex-direction: column;
+        margin-top: 0;
 
         &__card{
             width: 444px;

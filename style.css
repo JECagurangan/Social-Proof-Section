@@ -10,13 +10,13 @@ html {
 }
 
 body {
-  height: 100vh;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   font-size: 15px;
   font-family: 'Spartan', sans-serif;
   text-align: center;
+  position: relative;
 }
 
 @media (min-width: 1440px) {
@@ -27,62 +27,61 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
   }
 }
 
-.desktop-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  max-height: 355px;
+.bg-top-mobile {
+  display: none;
 }
 
-@media (max-width: 1440px) {
-  .desktop-bg {
-    display: none;
+@media (max-width: 375px) {
+  .bg-top-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
-.desktop-bg-bottom {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100%;
-  max-height: 355px;
+.bg-btm-mobile {
+  display: none;
 }
 
-@media (max-width: 1440px) {
-  .desktop-bg-bottom {
-    display: none;
+@media (max-width: 375px) {
+  .bg-btm-mobile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 
-.bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  max-height: 355px;
+.bg-top-desktop {
+  display: none;
 }
 
 @media (min-width: 1440px) {
-  .bg {
-    display: none;
+  .bg-top-desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
-.bg-bottom {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100%;
-  max-height: 355px;
+.bg-btm-desktop {
+  display: none;
 }
 
 @media (min-width: 1440px) {
-  .bg-bottom {
-    display: none;
+  .bg-btm-desktop {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -106,6 +105,9 @@ h1, h2, h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 1440px) {
@@ -113,15 +115,15 @@ h1, h2, h3 {
     padding: 126px 165px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 575px 575px;
-        grid-template-columns: 575px 575px;
-    -ms-grid-rows: 287.5px 287.5px;
-        grid-template-rows: 287.5px 287.5px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 1.9 rem;
   line-height: 2rem;
   max-width: 572px;
 }
@@ -140,12 +142,15 @@ header p {
   font-weight: 500;
   color: #937b92;
   max-width: 572px;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 1440px) {
   header p {
     text-align: left;
     max-width: 430px;
+    margin-bottom: 74px;
   }
 }
 
@@ -183,6 +188,7 @@ header p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 0;
   }
   .ratings__card {
     width: 444px;
@@ -227,9 +233,9 @@ header p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -245,6 +251,7 @@ header p {
   .comments__card {
     width: 350px;
     height: 235px;
+    margin-right: 20px;
   }
   .comments__card.colton {
     -ms-flex-item-align: start;

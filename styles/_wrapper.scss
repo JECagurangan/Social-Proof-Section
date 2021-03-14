@@ -3,11 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     @media (min-width: 1440px){
         padding: 126px 165px;
         display: grid;
-        grid-template-columns: 575px 575px;
-        grid-template-rows: 287.5px 287.5px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
